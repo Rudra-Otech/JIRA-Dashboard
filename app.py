@@ -1,6 +1,6 @@
 from Config import *
 from DataProcessors import *
-from App import *
+from PageComponents import *
 
 def main():
     '''
