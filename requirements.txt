@@ -6,3 +6,4 @@ plotly
 jira
 mysql-connector-python
 openpyxl
+ydata-profiling
