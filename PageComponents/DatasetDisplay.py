@@ -74,7 +74,7 @@ class DatasetDisplay:
             Show the profiling report saved
             return None
         '''
-        with open('./App/Profile Report.html', 'r') as profileReport:
+        with open('./PageComponents/Profile Report.html', 'r') as profileReport:
             profileReportHTML = profileReport.read()
         st.components.v1.html(profileReportHTML, scrolling=True, height=700)
         
