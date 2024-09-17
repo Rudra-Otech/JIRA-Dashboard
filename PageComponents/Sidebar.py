@@ -121,7 +121,7 @@ class Sidebar():
     def title(self):
         columns = st.columns([1, 3])
         with columns[0]:
-            st.image('./App/logo.jpg')
+            st.image('./PageComponents/logo.jpg')
         with columns[1]:
             st.title('JIRA Dashboard')
 
