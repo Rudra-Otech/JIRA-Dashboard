@@ -19,7 +19,7 @@ class Sidebar():
             Create a new Profile Report and save it,
             Update sql table using jira df
             '''
-            ProfileReport(self.df).to_file('./App/Profile Report.html')
+            ProfileReport(self.df).to_file('./PageComponents/Profile Report.html')
             sql.updateSQLTableUsingJIRA()
         
     def refreshData(self, sql):
