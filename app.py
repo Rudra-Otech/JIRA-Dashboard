@@ -10,7 +10,7 @@ def main():
 
     st.set_page_config(
         page_title="JIRA Dashboard",
-        page_icon="./App/logo.jpg",
+        page_icon="./PageComponents/logo.jpg",
         layout="wide",
         initial_sidebar_state="expanded"
     )
@@ -29,7 +29,7 @@ def main():
 
     df = sql.getTable().sort_values('Created', ascending = False).reset_index().drop(columns='index')
 
-    #df = pd.read_excel('./App/ExampleTable.xlsx').sort_values('Created', ascending = False).reset_index().drop(columns='index')
+    #df = pd.read_excel('./PageComponents/ExampleTable.xlsx').sort_values('Created', ascending = False).reset_index().drop(columns='index')
     
     sidebar = Sidebar(df)
     sidebar.createSidebar(sql, jira)
